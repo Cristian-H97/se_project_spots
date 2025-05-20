@@ -55,7 +55,6 @@ width: 190px;
 
 .profile__edit-btn img {
   filter: invert(42%) sepia(0%) saturate(6%) hue-rotate(202deg) brightness(95%) contrast(92%); /* con esto alcanzo el color #6B6B6B para que sea igual al del texto */
-  /*con este filtro logro que el icono tenga el mismo color que el texto */
 }
 
 .profile__add-btn{

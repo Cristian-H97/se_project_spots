@@ -79,5 +79,17 @@
     </main>
     <footer class="footer"></footer>
   </div>
+  <script>
+  // Seleccionar todos los botones de "me gusta"
+  const likeButtons = document.querySelectorAll('.card__like-btn');
+
+  // Añadir el evento de clic a cada botón
+  likeButtons.forEach((button) => {
+    button.addEventListener('click', function() {
+      // Toggle (alternar) la clase active
+      this.classList.toggle('card__like-btn_active');
+    });
+  });
+</script>
 </body>
 </html>

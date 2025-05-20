@@ -21,6 +21,11 @@ width: 190px;
   font-size: 32px;
   line-height: 100%;
   font-weight: 500;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .profile__description{
@@ -28,36 +33,48 @@ width: 190px;
   font-style: normal;
   font-size: 16px;
   line-height: 100%;
-
-
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .profile__edit-btn{
-margin-top: auto;
-font-weight: 500;
-font-size: 16px;
-line-height: 100%;
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #6B6B6B;
+}
 
+.profile__edit-btn img {
+  filter: invert(42%) sepia(0%) saturate(6%) hue-rotate(202deg) brightness(95%) contrast(92%); /* con esto alcanzo el color #6B6B6B para que sea igual al del texto */
+  /*con este filtro logro que el icono tenga el mismo color que el texto */
 }
 
 .profile__add-btn{
 margin-left: auto;
+margin-top: auto;
+margin-bottom: 0;
+padding: 18px 32px;
 font-weight: 500;
 font-size: 16px;
 line-height: 100%;
 color: #FCF5E5;
 background: #212121;
 border: none;
-padding: 18px 32px;
 align-items: center;
 justify-content: center;
 gap: 8px;
 display: flex;
-width: 149px;
 height: 52px;
 border-radius: 8px;
-margin-top: 138px;
-margin-bottom: 20px;
 cursor: pointer;
 }
 

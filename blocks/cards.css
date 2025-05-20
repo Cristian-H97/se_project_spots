@@ -17,20 +17,4 @@ padding-top: 20px;
     grid-template-columns: repeat(auto-fit, 288px);
     gap: 20px 12px;
    }
-  .cards__list--empty{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-  .cards__list--empty::before{
-    content: '';
-    background-image: url('../images/empty.svg');
-    width: 288px;
-    height: 288px;
-    background-size: cover;
-    display: block;
-    margin: 0 auto;
   }
-}
-

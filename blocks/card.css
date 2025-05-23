@@ -36,7 +36,12 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.cards__bottom-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(33, 33, 33, 0.4);
+  margin: 40px 0 60px;
+}
 @media screen and (max-width: 627px) {
   .card {
     max-width: 288px;
